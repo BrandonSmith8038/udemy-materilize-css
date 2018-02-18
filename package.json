@@ -6,13 +6,13 @@
   "scripts": {
     "start": "run-script-os",
     "start:win32":
-      "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 8080 --host https://materilize-css-cowboy8038.c9users.io/index.html",
+      "browser-sync start --server --files "**/*.css, **/*.html, **/*.js, !node_modules/**/*" --directory --port 8080 --host https://materilize-css-cowboy8038.c9users.io/index.html",
     "//":
       "Hello! If you are having trouble running this command. Try changing Firefox Developer Edition to FirefoxDeveloperEdition",
     "start:darwin:linux":
-      "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 8080 --host 'https://materilize-css-cowboy8038.c9users.io/index.html'",
+      "browser-sync start --server --files "**/*.css, **/*.html, **/*.js, !node_modules/**/*" --directory --port 8080 --host "https://materilize-css-cowboy8038.c9users.io/index.html"",
     "Home":
-      "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --director --port 3000"
+      "browser-sync start --server --files "**/*.css, **/*.html, **/*.js, !node_modules/**/*" --director --port 3000"
   },
   "author": "",
   "license": "ISC",

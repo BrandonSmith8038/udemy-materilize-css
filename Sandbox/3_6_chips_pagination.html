@@ -23,8 +23,8 @@
     <!-- MENU ROW -->
     <div class="row">
       <div class="col s3">
-        <a class='dropdown-button btn btn-large blue' href='#' data-activates='css1'>CSS 1</a>
-        <ul id='css1' class='dropdown-content'>
+        <a class="dropdown-button btn btn-large blue" href="#" data-activates="css1">CSS 1</a>
+        <ul id="css1" class="dropdown-content">
           <li>
             <a href="2_1_typography.html">Typography & Alignment</a>
           </li>
@@ -49,8 +49,8 @@
         </ul>
       </div>
       <div class="col s3">
-        <a class='dropdown-button btn btn-large green' href='#' data-activates='css2'>CSS 2</a>
-        <ul id='css2' class='dropdown-content'>
+        <a class="dropdown-button btn btn-large green" href="#" data-activates="css2">CSS 2</a>
+        <ul id="css2" class="dropdown-content">
           <li>
             <a href="3_1_cards.html">Cards</a>
           </li>
@@ -75,8 +75,8 @@
         </ul>
       </div>
       <div class="col s3">
-        <a class='dropdown-button btn btn-large yellow black-text' href='#' data-activates='js1'>JS 1</a>
-        <ul id='js1' class='dropdown-content'>
+        <a class="dropdown-button btn btn-large yellow black-text" href="#" data-activates="js1">JS 1</a>
+        <ul id="js1" class="dropdown-content">
           <li>
             <a href="4_1_carousel.html">Carousel</a>
           </li>
@@ -98,8 +98,8 @@
         </ul>
       </div>
       <div class="col s3">
-        <a class='dropdown-button btn btn-large red' href='#' data-activates='js2'>JS 2</a>
-        <ul id='js2' class='dropdown-content'>
+        <a class="dropdown-button btn btn-large red" href="#" data-activates="js2">JS 2</a>
+        <ul id="js2" class="dropdown-content">
           <li>
             <a href="5_1_parallax.html">Parallax</a>
           </li>
@@ -125,13 +125,13 @@
     <!-- START HERE -->
 
     <!-- CHIPS -->
-    <div class='chip'>
+    <div class="chip">
       Web development
     </div>
-    <div class='chip'>
+    <div class="chip">
       Web design
     </div>
-    <div class='chip'>
+    <div class="chip">
       Programming
     </div>
 
@@ -139,17 +139,17 @@
     <br>
 
     <!-- CHIPS WITH CLOSE -->
-    <div class='chip'>
+    <div class="chip">
       Web development
       i.material-icons<i class="material-icons close">close</i>
       <i></i>
     </div>
-    <div class='chip'>
+    <div class="chip">
       Web design
       i.material-icons<i class="material-icons close">close</i>
       <i></i>
     </div>
-    <div class='chip'>
+    <div class="chip">
       Programming
       <i class="material-icons close">close</i>
       <i></i>
@@ -159,46 +159,46 @@
     <br>
 
     <!-- CHIPS WITH IMAGES -->
-    <div class='chip'>
+    <div class="chip">
       <img src="img/img1.jpg"> John Doe
     </div>
-    <div class='chip'>
+    <div class="chip">
       <img src="img/img2.jpg"> Brian Jackson
     </div>
-    <div class='chip'>
+    <div class="chip">
       <img src="img/img3.jpg"> Lori Smith
     </div>
 
     <!-- CHIPS INPUT WITH AUTOCOMPLETE-->
-    <div class='chips-input'></div>
+    <div class="chips-input"></div>
     
     
 
     <!-- PAGINATION -->
-    <ul class='pagination'>
-      <li class='disabled'>
+    <ul class="pagination">
+      <li class="disabled">
         <a href="#!">
-          <i class='material-icons'>chevron_left</i>
+          <i class="material-icons">chevron_left</i>
         </a>
       </li>
-      <li class='waves-effect'>
+      <li class="waves-effect">
         <a href="#!">1</a>
       </li>
-      <li class='waves-effect active'>
+      <li class="waves-effect active">
         <a href="#!">2</a>
       </li>
-      <li class='waves-effect'>
+      <li class="waves-effect">
         <a href="#!">3</a>
       </li>
-      <li class='waves-effect'>
+      <li class="waves-effect">
         <a href="#!">4</a>
       </li>
-      <li class='waves-effect'>
+      <li class="waves-effect">
         <a href="#!">5</a>
       </li>
-      <li class='waves-effect'>
+      <li class="waves-effect">
         <a href="#!">
-          <i class='material-icons'>chevron_right</i>
+          <i class="material-icons">chevron_right</i>
         </a>
       </li>
     </ul>
@@ -217,29 +217,29 @@
 
   <script>
     $(document).ready(function () {
-      $('.dropdown-button').dropdown({
+      $(".dropdown-button").dropdown({
         constrainWidth: false,
         hover: true,
         belowOrigin: true,
-        alignment: 'left'
+        alignment: "left"
       });
 
       // JAVASCRIPT START HERE //
 
-      $('.chips-input').material_chip({
-        placeholder: 'Tags',
-        secondaryPlaceholder: '+tag',
+      $(".chips-input").material_chip({
+        placeholder: "Tags",
+        secondaryPlaceholder: "+tag",
         autocompleteOptions: {
           data: {
-            'html': null,
-            'css': null,
-            'javascript': null
+            "html": null,
+            "css": null,
+            "javascript": null
           }
         }
       })
       
       //Add Chip Event
-      $('.chips-input').on('chip.add', function(e, chip){
+      $(".chips-input").on("chip.add", function(e, chip){
         console.log(`You added a chip - ${chip.tag}`)
       })
 

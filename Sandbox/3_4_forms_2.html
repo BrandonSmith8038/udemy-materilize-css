@@ -28,8 +28,8 @@
     <!-- MENU ROW -->
     <div class="row">
       <div class="col s3">
-        <a class='dropdown-button btn btn-large blue' href='#' data-activates='css1'>CSS 1</a>
-        <ul id='css1' class='dropdown-content'>
+        <a class="dropdown-button btn btn-large blue" href="#" data-activates="css1">CSS 1</a>
+        <ul id="css1" class="dropdown-content">
           <li>
             <a href="2_1_typography.html">Typography & Alignment</a>
           </li>
@@ -54,8 +54,8 @@
         </ul>
       </div>
       <div class="col s3">
-        <a class='dropdown-button btn btn-large green' href='#' data-activates='css2'>CSS 2</a>
-        <ul id='css2' class='dropdown-content'>
+        <a class="dropdown-button btn btn-large green" href="#" data-activates="css2">CSS 2</a>
+        <ul id="css2" class="dropdown-content">
           <li>
             <a href="3_1_cards.html">Cards</a>
           </li>
@@ -80,8 +80,8 @@
         </ul>
       </div>
       <div class="col s3">
-        <a class='dropdown-button btn btn-large yellow black-text' href='#' data-activates='js1'>JS 1</a>
-        <ul id='js1' class='dropdown-content'>
+        <a class="dropdown-button btn btn-large yellow black-text" href="#" data-activates="js1">JS 1</a>
+        <ul id="js1" class="dropdown-content">
           <li>
             <a href="4_1_carousel.html">Carousel</a>
           </li>
@@ -103,8 +103,8 @@
         </ul>
       </div>
       <div class="col s3">
-        <a class='dropdown-button btn btn-large red' href='#' data-activates='js2'>JS 2</a>
-        <ul id='js2' class='dropdown-content'>
+        <a class="dropdown-button btn btn-large red" href="#" data-activates="js2">JS 2</a>
+        <ul id="js2" class="dropdown-content">
           <li>
             <a href="5_1_parallax.html">Parallax</a>
           </li>
@@ -130,7 +130,7 @@
     <!-- START HERE -->
     <form>
       <!-- SWITCH -->
-      <div class='switch'>
+      <div class="switch">
         <label>
           Disable
           <input type="checkbox" checked/>
@@ -140,7 +140,7 @@
 
       <!-- DISABLED SWITCH -->
       <!-- SWITCH -->
-      <div class='switch'>
+      <div class="switch">
         <label>
           Disable
           <input type="checkbox"/>
@@ -152,42 +152,42 @@
       <br>
 
       <!-- FILE INPUT -->
-      <div class='file-field input-field'>
-        <div class='btn'>
+      <div class="file-field input-field">
+        <div class="btn">
           <span>Upload File</span>
           <input type="file">
         </div>
-        <div class='file-path-wrapper'>
-          <input class='file-path' type="text">
+        <div class="file-path-wrapper">
+          <input class="file-path" type="text">
         </div>
       </div>
 
       <!-- RANGE SLIDER -->
-      <p class='range-field'>
-        <input type="range" min='0' max='100'>
+      <p class="range-field">
+        <input type="range" min="0" max="100">
       </p>
 
       <!-- DATE PICKER -->
-      <div class='input-field'>
-        <input type="text" id="date" class='datepicker'>
+      <div class="input-field">
+        <input type="text" id="date" class="datepicker">
         <label for="date">Choose a Date</label>
       </div>
 
       <!-- TIME PICKER -->
       <div>
-        <input type="text" id="time" class='timepicker'>
+        <input type="text" id="time" class="timepicker">
         <label for="time">Choose a Time</label>
       </div>
 
       <!-- CHARACTER COUNTER -->
       <div>
-        <input id="post" type="text" data-length='20'>
+        <input id="post" type="text" data-length="20">
         <label for="post">Post</label>
       </div>
 
       <!-- AUTOCOMPLETE -->
       <div>
-        <input type="text" id="fruit" class='autocomplete'>
+        <input type="text" id="fruit" class="autocomplete">
         <label for="fruit">Type a Fruit</label>
       </div>
 
@@ -214,31 +214,31 @@
 
   <script>
     $(document).ready(function () {
-      $('.dropdown-button').dropdown({
+      $(".dropdown-button").dropdown({
         constrainWidth: false,
         hover: true,
         belowOrigin: true,
-        alignment: 'left'
+        alignment: "left"
       });
 
       // JAVASCRIPT START HERE //
 
       //Init DatePicker
-      $('.datepicker').pickadate({
+      $(".datepicker").pickadate({
         selectMonths: true,
         selectYears: 15,
         closeOnSelect: true
       })
       
-      $('.timepicker').pickatime({
+      $(".timepicker").pickatime({
         twelvehour: false,
-        default: 'now',
-        donetext: 'finshed',
-        clearText: 'Erase',
-        canceltext: 'Leave',
+        default: "now",
+        donetext: "finshed",
+        clearText: "Erase",
+        canceltext: "Leave",
         autoclose: true
       })
-      $('.autocomplete').autocomplete({
+      $(".autocomplete").autocomplete({
         data: {
           "Apple": null,
           "Orange": null,

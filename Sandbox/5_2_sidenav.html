@@ -23,8 +23,8 @@
     <!-- MENU ROW -->
     <div class="row">
       <div class="col s3">
-        <a class='dropdown-button btn btn-large blue' href='#' data-activates='css1'>CSS 1</a>
-        <ul id='css1' class='dropdown-content'>
+        <a class="dropdown-button btn btn-large blue" href="#" data-activates="css1">CSS 1</a>
+        <ul id="css1" class="dropdown-content">
           <li>
             <a href="2_1_typography.html">Typography & Alignment</a>
           </li>
@@ -49,8 +49,8 @@
         </ul>
       </div>
       <div class="col s3">
-        <a class='dropdown-button btn btn-large green' href='#' data-activates='css2'>CSS 2</a>
-        <ul id='css2' class='dropdown-content'>
+        <a class="dropdown-button btn btn-large green" href="#" data-activates="css2">CSS 2</a>
+        <ul id="css2" class="dropdown-content">
           <li>
             <a href="3_1_cards.html">Cards</a>
           </li>
@@ -75,8 +75,8 @@
         </ul>
       </div>
       <div class="col s3">
-        <a class='dropdown-button btn btn-large yellow black-text' href='#' data-activates='js1'>JS 1</a>
-        <ul id='js1' class='dropdown-content'>
+        <a class="dropdown-button btn btn-large yellow black-text" href="#" data-activates="js1">JS 1</a>
+        <ul id="js1" class="dropdown-content">
           <li>
             <a href="4_1_carousel.html">Carousel</a>
           </li>
@@ -98,8 +98,8 @@
         </ul>
       </div>
       <div class="col s3">
-        <a class='dropdown-button btn btn-large red' href='#' data-activates='js2'>JS 2</a>
-        <ul id='js2' class='dropdown-content'>
+        <a class="dropdown-button btn btn-large red" href="#" data-activates="js2">JS 2</a>
+        <ul id="js2" class="dropdown-content">
           <li>
             <a href="5_1_parallax.html">Parallax</a>
           </li>
@@ -126,42 +126,42 @@
 
     <!-- SIDENAV -->
 
-    <ul>
+    <ul id="slide-out" class="side-nav">
       <li>
-        <div>
-          <div>
-            <img>
+        <div class="user-view">
+          <div class="background">
+            <img src="img/img4.jpg">
           </div>
-          <a>
-            <img>
+          <a href="#!">
+            <img class="circle" src="img/img5.jpg">
+          </a>
+          <a href="#!">
+            <span class="white-text name">John Doe</span>
           </a>
           <a>
-            <span>John Doe</span>
-          </a>
-          <a>
-            <span>jdoe@gmail.com</span>
+            <span class="white-text email">jdoe@gmail.com</span>
           </a>
         </div>
       </li>
       <li>
-        <a>
-          <i></i>Dashboard</a>
+        <a href="#!">
+          <i class="material-icons">dashboard</i>Dashboard</a>
       </li>
       <li>
-        <a>Posts</a>
+        <a href="#!">Posts</a>
       </li>
       <li>
-        <div></div>
+        <div class="divider"></div>
       </li>
       <li>
-        <a>Account Info</a>
+        <a class="subheader" href="#!">Account Info</a>
       </li>
       <li>
-        <a>Logout</a>
+        <a class="waves-effect" href="#!">Logout</a>
       </li>
     </ul>
-    <a>
-      <i></i>
+    <a href="#!" data-activates="slide-out" class="button-collapse">
+      <i class="material-icons">menu</i>
     </a>
 
 
@@ -179,15 +179,20 @@
 
   <script>
     $(document).ready(function () {
-      $('.dropdown-button').dropdown({
+      $(".dropdown-button").dropdown({
         constrainWidth: false,
         hover: true,
         belowOrigin: true,
-        alignment: 'left'
+        alignment: "left"
       });
 
       // JAVASCRIPT START HERE //
-
+      $(".button-collapse").sideNav({
+        menuWidth: 300,
+        edge: 'left',
+        closeOnClick: false,
+        draggable: true
+      })
 
 
 
