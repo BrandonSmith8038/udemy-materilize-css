@@ -8,6 +8,11 @@
   overflow: hidden;
 }
 
+.btn-extend {
+  display: block;
+  width: 100%;
+}
+
 .main-header {
   background: url('../img/background.jpg');
   background-size: cover;
