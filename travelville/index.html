@@ -92,6 +92,46 @@
 			</li>
 		</ul>
 	</section>
+	<!--Section: Search-->
+	<section class="section section-search teal darken-1 white-text center">
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<h3>Search Desitinations</h3>
+					<input type="text" class="white grey-text autocomplete" placeholder="Aruba, Cancun, etc..." id="autocomplete-input">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Section Icon Boxes-->
+	<section class="section section-icons grey lighten-4 center">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m4">
+					<div class="card-panel">
+						<i class="material-icons large teal-text">room</i>
+						<h4>Pick Where</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, aut.</p>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card-panel">
+						<i class="material-icons large teal-text">store</i>
+						<h4>Travel Shop</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, aut.</p>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card-panel">
+						<i class="material-icons large teal-text">airplanemode_active</i>
+						<h4>Fly Cheap</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, aut.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
 
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -105,10 +145,23 @@
 			$('.slider').slider({
 				indicators: false,
 				height: 500,
-				transistion: 500,
+				transition: 500,
 				interval: 6000
 			})
 			
+			// AutoComplete
+			$('.autocomplete').autocomplete({
+				data: {
+					"Aruba": null,
+					"Cancun Mexico": null,
+					"Hawaii": null,
+					"Florida": null,
+					"California": null,
+					"Jamaica": null,
+					"Europe": null,
+					"The Bahamas": null
+				}
+			})
 			
 		});
 	</script>
