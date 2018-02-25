@@ -4,8 +4,18 @@
 $header-bg: url(../img/pattern.png);
 $header-height: 300px;
 
+// Text Color Funtion
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
 body {
   background: $primary-color;
+  color: set-text-color($primary-color);
 }
 
 //Header
@@ -19,4 +29,33 @@ body {
     margin: 0;
     padding-top: 30px;
   }
+}
+
+.img-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+}
+
+.card-content {
+  color: $primary-color;
+}
+
+.page-footer {
+  background-color: $secondary-color;
+
+  .footer-copyright {
+    background-color: $secondary-color-light;
+  }
+}
+
+.modal {
+  color: #333;
+}
+
+.row-1,
+.row-3,
+.row-2 {
+  opacity: 0;
 }
