@@ -1,10 +1,14 @@
 @import './sass/materialize';
 
-//Header
-
+// Vars
 $header-bg: url(../img/pattern.png);
 $header-height: 300px;
 
+body {
+  background: $primary-color;
+}
+
+//Header
 .main-header {
   background: $header-bg;
   color: #fff;
